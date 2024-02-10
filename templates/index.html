@@ -1,0 +1,350 @@
+{% extends "base.html" %}
+
+{% block style %}
+<style>
+  .carousel-item img {
+    height: 400px; 
+  }
+  .content {
+    display: none;
+  }
+  .content2 {
+    display: none;
+  }
+  .content3 {
+    display: none;
+  }
+  .content4 {
+    display: none;
+  }
+</style>
+{% endblock style %}
+
+{% block title %} Resume {% endblock title%}
+
+{% block body %}
+<div class="container-fluid my-0 px-0" id="random">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0"
+        class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/8.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Worked as Accountant in Dawateislami India</h4>
+          <p>Responsible for maintaining accurate financial records, preparing
+            statements, reconciling accounts, processing transactions, and
+            ensuring compliance.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/10.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Employed as the Region Supervisor of the Accounting team.</h4>
+          <p>I am currently employed as the Regional Supervisor of the
+            Accounting Team within the Finance Department of Dawateislami
+            India</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Embarked on Coding to Address Finance Department Challenges</h4>
+          <p>Embarked on coding endeavors to resolve challenges within the
+            finance department. Developed solutions to enhance efficiency,
+            streamline processes, and address financial issues.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions"
+      role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions"
+      role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="container my-4">
+  <h5>Work Experience:</h5>
+  <table class="table table-striped">
+    <thead>
+      <th scope="row">Index</th>
+      <th scope="row">NAME OF THE ORGANISATION</th>
+      <th scope="row">DURATION OF EXPERIENCE</th>
+      <th scope="row">DESIGNATION</th>
+      <th scope="row">AREA OF EXPERIENCE</th>
+      <thead>
+        <tbody>
+
+          <tr>
+            <th scope="row" class="table-active">1</th>
+            <td colspan="1" class="table-active">Orchid Hotel</td>
+            <td colspan="1" class="table-active">April,2015 to May,2017</td>
+            <td colspan="1" class="table-active">Accountant</td>
+            <td colspan="1" class="table-active">Accounts work </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td colspan="1">Dawateislami India</td>
+            <td colspan="1">August,2018 to Februrary,2021</td>
+            <td colspan="1">Accountant</td>
+            <td colspan="1">Accounts work and Team Supporting</td>
+          </tr>
+          <tr>
+            <th scope="row" class="table-active">3</th>
+            <td colspan="1" class="table-active">Dawateislami India</td>
+            <td colspan="1" class="table-active">March,2021 to Present</td>
+            <td colspan="1" class="table-active">Accounts Supervisor</td>
+            <td colspan="1" class="table-active">Administration and Data
+              Analysis </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    <div class="container my-3">
+        <button onclick="toggleContent3()" class="btn btn-dark" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+            Academic Qualifications:
+        </button>
+        <div class="content3" id="content3">
+            <table class="table">
+                <tbody>
+                    <ul>
+                        <tr>
+                            <td>⮚ Master of Commerce from Agra College, Agra in 2018.</td>
+                        </tr>
+                        <tr>
+                            <td>⮚ Bachelor of Commerce from Agra College, Agra in 2018.</td>
+                        </tr>
+                        <tr>
+                            <td>⮚ Intermediate from Colonel’s Brighland Public School in 2015 (CBSE Board).</td>
+                        </tr>
+                        <tr>
+                            <td>⮚ High school from Colonel’s Brighland Public School in 2013 (CBSE Board).</td>
+                        </tr>
+                    </ul>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+    <div class="container my-3">
+      <button onclick="toggleContent()" class="btn btn-dark" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseExample" 
+              aria-expanded="false" aria-controls="collapseExample">
+          Job Description: Orchid Hotel- Taj Nagri Phase-2, Agra
+      </button>
+      <div class="content" id="content">
+          <table class="table">
+              <tbody>
+                  <ul>
+                      <tr>
+                          <td>
+                              <li>Prepare and analyze monthly, quarterly, and annual financial statements, ensuring compliance with accounting principles and regulations.</li>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <li>Accurately record and maintain financial transactions, including accounts payable and receivable, expense reports, and general ledger entries.</li>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <li>Perform regular bank reconciliations to ensure the accuracy of our financial records.</li>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <li>Prepare and file tax returns, including income tax, sales tax, and other relevant filings, and stay updated with changes in tax laws.</li>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <li>Collaborate with auditors during annual audits, providing necessary documentation and explanations.</li>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <li>Conduct financial analysis, including variance analysis and trend analysis, to support informed decision-making.</li>
+                          </td>
+                      </tr>
+                  </ul>
+              </tbody>
+          </table>
+      </div>
+  </div>
+  
+
+  <div class="container my-3">
+    <h5>
+        <button onclick="toggleContent2()" class="btn btn-dark" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseExample" 
+                aria-expanded="false" aria-controls="collapseExample">
+            Job Description: Delhi Region Finance, Dawateislami India
+        </button>
+    </h5>
+    <div class="content2" id="content2">
+        <table class="table">
+            <tbody>
+                <ul>
+                    <tr>
+                        <td><li>Use ERPNext and Donation Module Software to compile reports on donor profile, credit information and response rates to improve donation tracking.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Develop and maintain Power Bi Dashboards to track financial performance.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Collaborate with cross-functional teams to prepare annual budgets and quarterly forecasts.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Monitor budget variances and provide recommendations for optimization.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Analyze financial data and performance metrics to identify trends, opportunities, and areas for improvement.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Conduct ad-hoc financial analysis as required to support various initiatives.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Prepare accurate and timely financial statements, including income statements, balance sheets, and cash flow statements.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Ensure compliance with accounting standards and regulatory requirements.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Assist in the preparation of annual reports and filings.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Continuously improve data quality and reporting processes.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Completed daily accounting tasks such as tracking funds, preparing deposits and reconciling accounts.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Completed general ledger entries on a short schedule with nearly 100% accuracy.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Diminished outstanding debts by analyzing accounts for issues.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Reconciled accounts and reviewed all materials.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Maintains financial security by following internal controls.</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Prepares payments by verifying documentation, and requesting disbursements.</li></td>
+                    </tr>
+                </ul>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="container my-3">
+  <button onclick="toggleContent4()" class="btn btn-dark" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#collapseExample" 
+          aria-expanded="false" aria-controls="collapseExample">
+      Skills:
+  </button>
+  <div class="content4" id="content4">
+      <table class="table">
+          <tbody>
+              <ul>
+                  <tr>
+                      <td>⮚ Python</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ MySQL</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ Javascript</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ HTML</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ Book Keeping</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ Accounting</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ Problem Solving</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ Microsoft Power BI</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ Microsoft Power Query</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ Advance Excel</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ Financial Reporting</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ Data Analytics</td>
+                  </tr>
+                  <tr>
+                      <td>⮚ Financial Analysis</td>
+                  </tr>
+              </ul>
+          </tbody>
+      </table>
+  </div>
+</div>
+
+{% block script %}
+<script>
+    function toggleContent() {
+        var content = document.getElementById("content");
+        if (content.style.display === "none") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+
+    function toggleContent2() {
+        var content2 = document.getElementById("content2");
+        if (content2.style.display === "none") {
+            content2.style.display = "block";
+        } else {
+            content2.style.display = "none";
+        }
+    }
+
+    function toggleContent3() {
+        var content3 = document.getElementById("content3");
+        if (content3.style.display === "none") {
+            content3.style.display = "block";
+        } else {
+            content3.style.display = "none";
+        }
+    }
+
+    function toggleContent4() {
+        var content4 = document.getElementById("content4");
+        if (content4.style.display === "none") {
+            content4.style.display = "block";
+        } else {
+            content4.style.display = "none";
+        }
+    }
+</script>
+{% endblock script %}
+{% endblock body%}
